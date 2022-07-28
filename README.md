@@ -19,3 +19,8 @@ Default Cert settings are as follows:
 - City: Lazytown
 - Organination: Lazy Nerds
 - Organization Unit: Department of Lazy
+
+
+### Docker Enter
+
+A simple script that can be used to enter a docker container by it's image name. This is useful when trying to debug unnamed containers as every time the container restarts a new id is assigned to the container requring the user to run a ``docker ps`` to get the new id before running ``docker exec -it <container_id> /bin/bash`` to enter a bash shell in the container. The easiest way to use this is to add an alias to your bashrc file such as ``alias docker-enter="sudo ~/location/of/script/docker-enter.sh"``
